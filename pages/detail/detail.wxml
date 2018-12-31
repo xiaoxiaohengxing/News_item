@@ -1,0 +1,25 @@
+   <view class="navWrapper">
+      <image class="backIcon" src="/images/back.png" bindtap='backToHomepage'> </image>
+      <text class="navTitle">优达微头条</text> 
+  </view>
+
+
+  <view class='allContent'>
+    <view class='head'>
+    <view class='title'>{{detailData.title}}</view>
+    <view class='des'>
+      <view wx:if='{{detailData.source}}'>{{detailData.source}}</view>
+      <view wx:else>佚名</view>
+      <view class='time'>{{detailData.date}}</view>
+      <view>已阅：{{detailData.readCount}}</view>
+    </view>
+  </view>
+  
+  <view wx:for='{{detailData.content}}' wx:key='{{detailData}}'>
+    <view wx:if='{{item.type == "p"}}' class='paraContent'>{{item.text}}</view>
+    <view wx:if='{{item.type == "strong"}}' class='paraTitle'>{{item.text}}</view>
+    <block wx:if='{{item.type=="image"}}' > 
+      <image src='{{item.src}}' class='contentImage'></image>
+    </block>   
+  </view>
+  </view>

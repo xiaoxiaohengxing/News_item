@@ -1,0 +1,153 @@
+.navWrapper{
+  background-color:#2b4837;
+  position: fixed;  
+  height: 200rpx;
+  width: 100%;
+  z-index: 66;
+}
+
+.navIcon{
+  position: absolute;
+  top: 66rpx;
+  left: 20rpx;
+  width: 60rpx;
+  height: 60rpx; 
+}
+
+.navTitle{
+  position: absolute;
+  top:70rpx;
+  left:80rpx;
+  font-family: "HYXinRenWenSongW",汉仪新人文宋,"Microsoft YaHei",微软雅黑;
+  font-size: 40rpx;
+  line-height: 56rpx;
+  color: white;
+}
+
+.newsTabsWrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  top: 136rpx;
+}
+
+.newsTabs{
+  position: relative;
+  width: 120 rpx;
+  font-size: 32rpx;
+  line-height: 45rpx;
+  color: white;
+  opacity: 0.8;
+}
+
+.selected {
+  font-size: 36rpx;
+  line-height: 50rpx;
+}
+
+.selectedLine {
+  position: absolute;
+  left: 20rpx;
+  right: 20rpx;
+  border-bottom: 4rpx solid white ;
+}
+
+.topWrapper{
+  position: relative;
+  top: 200rpx;
+}
+
+.topBg{
+  z-index:-1;
+  width: 100%;
+  height:410rpx;
+  display: block;
+}
+
+.frame{
+  position: absolute;
+  height: 353rpx;
+  width: 694rpx;
+  top: 0rpx;
+  left: 0rpx;
+  border: 30rpx solid rgba(255,255,255,0.7);
+  background-clip: padding-box;
+}
+
+.topDes{
+  position: absolute;
+  color:aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  text-align: left;
+  top: 256rpx;
+  padding: 0 60rpx;
+  opacity: 0.9; 
+  z-index: 1;
+}
+
+.desBg{
+  position: absolute;
+  background-color: #2b4837;
+  opacity: 0.6;
+  top: 253rpx;
+  left: 30rpx;
+  height: 130rpx;
+  width: 694rpx;
+}
+
+.topTime{
+  padding-left: 30rpx;
+  opacity: 0.7;
+}
+
+.topSource{
+  opacity: 0.7;
+}
+
+.newsListWrapper{
+  position: relative;
+  top: 200rpx;
+}
+
+.newsListItems{
+  display: flex;
+  align-items: center;
+  border-bottom: 3rpx solid #2b4837;
+  padding: 26rpx 0;
+  margin: 0 30rpx;
+}
+
+.newsInfo {
+ width: 530rpx; 
+}
+
+.listPic{
+  width: 180rpx;
+  height: 120rpx;
+  border-radius: 6rpx;
+}
+
+.newsTitle {
+  font-family: "Microsoft YaHei",微软雅黑;
+  font-size: 32rpx;
+  line-height: 45rpx;
+  padding-right: 10rpx;
+  margin-bottom: 10rpx; 
+}
+
+.newsDes {
+  display: flex;
+  font-size: 25rpx;
+  line-height: 35rpx;
+  font-family: "Microsoft YaHei",微软雅黑;
+  text-align: left;
+  margin-right: 20rpx;
+  opacity: 0.7;
+}
+.newsTime{
+  padding-left: 30rpx;
+}
